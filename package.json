@@ -29,9 +29,9 @@
     "uglify-js-brunch": ">= 1.0 < 1.7",
     "clean-css-brunch": ">= 1.0 < 1.7",
 
-    "bower-stylesheet-brunch": "*",
-    "bower-javascript-brunch": "*",
-    "bower-asserts-brunch": "*",
+    "bower-stylesheet-brunch": "0.0.1",
+    "bower-javascript-brunch": "0.0.1",
+    "bower-asserts-brunch": "0.0.1",
     "bower": "~0.9.0",
 
     "jade-angularjs-brunch" : "0.0.3"
