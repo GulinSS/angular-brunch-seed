@@ -1,7 +1,11 @@
 exports.config =
   # See docs at http://brunch.readthedocs.org/en/latest/config.html.
   conventions:
-    ignored: /^(vendor.*\.less|.+node_modules.+|.+_.+\..+)$/
+    ignored: ///^(
+        vendor.*\.less    # exclude vendor less files, cause them must be css already
+        |.+node_modules.+ # exclude all entities from node_modules
+        |.+_.+\..+)$      # exclude all entities with '_' before file extension
+      ///
   modules:
     definition: false
     wrapper: false
@@ -50,4 +54,4 @@ exports.config =
 
 
   # Enable or disable minifying of result js / css files.
-  # minify: true
+  # optimize: true
