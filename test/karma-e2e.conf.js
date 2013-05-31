@@ -1,15 +1,15 @@
 basePath = '../';
 
+frameworks = ["requirejs"];
+
 files = [
-  ANGULAR_SCENARIO,
-  ANGULAR_SCENARIO_ADAPTER,
   'test/e2e/**/*.js',
   'test/e2e/**/*.coffee'
 ];
 
 autoWatch = false;
 
-browsers = ['Chrome'];
+browsers = ['PhantomJS'];
 
 singleRun = true;
 
@@ -23,3 +23,9 @@ proxies = {
 preprocessors = {
   '**/*.coffee': 'coffee'
 };
+
+plugins = [
+  'karma-coffee-preprocessor',
+  'karma-requirejs',
+  'karma-phantomjs-launcher'
+]

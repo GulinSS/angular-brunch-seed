@@ -4,10 +4,10 @@
 // base path, that will be used to resolve files and exclude
 basePath = '../';
 
+frameworks = ["jasmine"];
+
 // list of files / patterns to load in the browser
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
 
   // Application Code //
   'vendor/jquery/jquery.js',
@@ -70,7 +70,7 @@ autoWatch = true;
 // - PhantomJS
 // - IE (only Windows)
 // CLI --browsers Chrome,Firefox,Safari
-browsers = [];
+browsers = ['PhantomJS'];
 
 // If browser does not capture in given timeout [ms], kill it
 // CLI --capture-timeout 5000
@@ -88,3 +88,9 @@ reportSlowerThan = 500;
 preprocessors = {
   '**/*.coffee': 'coffee'
 };
+
+plugins = [
+  'karma-coffee-preprocessor',
+  'karma-jasmine',
+  'karma-phantomjs-launcher'
+]
