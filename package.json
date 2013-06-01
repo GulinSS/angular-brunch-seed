@@ -29,15 +29,14 @@
     "uglify-js-brunch": ">= 1.0 < 1.7",
     "clean-css-brunch": ">= 1.0 < 1.7",
 
-    "bower-stylesheet-brunch": "0.0.1",
-    "bower-javascript-brunch": "0.0.1",
-    "bower-asserts-brunch": "0.0.1",
+    "bower-stylesheet-brunch": "~0.0.2",
+    "bower-javascript-brunch": "~0.0.2",
+    "bower-asserts-brunch": "~0.0.1",
     "bower": "~0.9.0",
 
-    "jade-angularjs-brunch" : "0.0.3"
+    "jade-angularjs-brunch" : "0.0.6"
   },
   "devDependencies": {
-    "jade": ">= 0.27.7",
     "coffee-script": "*",
     "karma": "~0.9.0"
   }
