@@ -21,10 +21,7 @@ exports.config =
         before: [
           'vendor/console-polyfill/index.js'
           'vendor/jquery/jquery.js'
-          'vendor/angular/angular.js'          
-          'vendor/angular-resource/angular-resource.js'          
-          'vendor/angular-cookies/angular-cookies.js'          
-          'vendor/angular-sanitize/angular-sanitize.js'                    
+          'vendor/angularjs-bower/angular.js'                  
           'vendor/bootstrap/docs/assets/js/bootstrap.js'
         ]
 
@@ -46,7 +43,13 @@ exports.config =
     bower:
       extend:
         "bootstrap" : 'vendor/bootstrap/docs/assets/js/bootstrap.js'
-        "angular-mocks": []
+        "angularjs-bower": [
+          'vendor/angularjs-bower/angular.js'
+          'vendor/angularjs-bower/angular-loader.js'
+          'vendor/angularjs-bower/angular-resource.js'
+          'vendor/angularjs-bower/angular-sanitize.js'
+          'vendor/angularjs-bower/angular-mocks.js'
+        ]
         "styles": []
       asserts:
         "img" : /bootstrap(\\|\/)img/

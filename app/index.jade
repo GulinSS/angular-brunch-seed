@@ -19,8 +19,8 @@ html(lang='en', ng-app='app')
         enabled: true
       };
     script(src='/js/vendor.js')
-    script(src='/js/partials.js')
     script(src='/js/app.js')
+    script(src='/js/app.partials.js')
   body(ng-controller='AppCtrl')
     .wrapper
       .navbar.navbar-static-top
@@ -32,7 +32,7 @@ html(lang='en', ng-app='app')
               span.icon-bar
             a(href='/').brand Angular Brunch Seed
             .nav-collapse
-              div(ng-include="'/partials/nav.html'")
+              div(ng-include="'app/partials/nav.jade'")
       .container.main-content
         div(ng-view)
         div Angular Brunch seed app: v<span app-version></span>
