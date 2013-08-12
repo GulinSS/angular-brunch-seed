@@ -7,7 +7,7 @@ App = angular.module('app', [
   'app.directives'
   'app.filters'
   'app.services'
-  'app.partials'
+  'app.templates'
 ])
 
 App.config([
